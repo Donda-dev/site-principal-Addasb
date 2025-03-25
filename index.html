@@ -202,6 +202,358 @@
             </div>
         </div>
         </section>
+        <section class="testimonials">
+            <h2 class="section-title">Histórias que Inspiram</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">Veja o que dizem pessoas que encontram seu melhor amigo através da nossa associação</p>
+
+            <div class="testimonial-grid">
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Adotar o Thor foi a melhor decisão da nossa família. Ele trouxe alegria e amor para nossa casa. A associação foi incrível em todo o processo, desde a escolha até o acompanhamento pós-adoção."</p>
+                        <div class="testimonial-author">
+                            <img src="./img/testimonial1.jpg" alt="Foto de perfil do autor do depoimento">
+                            <div class="author-info">
+                                <h4>família Silva</h4>
+                                <p>Adotou o Thor em 2022</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Como voluntária e adotante, posso dizer que o trabalho desta associação é transformador. Minha gatinha Luna é minha companheira em todos os momentos e sou grata por tê-la em minha vida."</p>
+                    <div class="testimonial-author">
+                        <img src="https://source.unsplash.com/random/200x200/?woman,face" alt="Juliana Martins">
+                        <div class="author-info">
+                            <h4>Juliana Martins</h4>
+                            <p>Voluntária e adotante</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Nunca imaginei que um coelho pudesse ser tão carinhoso. Pipoca é a alegria da nossa casa e minha filha adora cuidar dela. O processo de adoção foi muito bem orientado pela equipe."</p>
+                    <div class="testimonial-author">
+                        <img src="https://source.unsplash.com/random/200x200/?family" alt="Família Oliveira">
+                        <div class="author-info">
+                            <h4>Família Oliveira</h4>
+                            <p>Adotou a Pipoca em 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <div class="modal" id="veterinarioModal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeVetModal">&times;</span>
+                <div class="modal-header">
+                    <img id="modalVetImg" src="" alt="" class="modal-img">
+                    <div class="modal-title">
+                        <h3 id="modalVetNome"></h3>
+                        <p id="modalVetEspecialidade"></p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Contato:</strong> <span id="modalVetContato"></span></p>
+                    <p><strong>Clínica:</strong> <span id="modalVetClinica"></span></p>
+                    <p><strong>Contribuição para a associação:</strong></p>
+                    <p id="modalVetContribuicao"></p>
+                </div>
+            </div>
+        </div>
+            <!-- formulario para informações dos animais-->
+        <div class="modal" id="animalModal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeAnimalModal">&times;</span>
+                <div class="modal-header">
+                    <img id="modalAnimalImg" src="" alt="" class="modal-img">
+                    <div class="modal-title">
+                        <h3 id="modalAnimalNome"></h3>
+                        <p id="modalAnimalTipo"></p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div id="urgentAlert" style="display: none; background-color: var(--warning); color: var(--dark); padding: 10px; border-radius: 5px; margin-bottom: 15px; font-weight: bold;">
+                        <i class="fas fa-exclamation-triangle"></i> ADOÇÃO URGENTE: <span id="urgentReason"></span>
+                    </div>
+                    
+                    <div class="animal-details">
+                        <div class="detail-item">
+                            <strong>Raça</strong>
+                            <span id="modalAnimalRaca"></span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Idade</strong>
+                            <span id="modalAnimalIdade"></span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Sexo</strong>
+                            <span id="modalAnimalSexo"></span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Porte</strong>
+                            <span id="modalAnimalPorte"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item" style="flex: 1 1 100%;">
+                        <strong>Temperamento</strong>
+                        <p id="modalAnimalTemperamento"></p>
+                    </div>
+                    
+                    <div class="detail-item" style="flex: 1 1 100%;">
+                        <strong>Saúde</strong>
+                        <p id="modalAnimalSaude"></p>
+                    </div>
+                    
+                    <div class="detail-item" style="flex: 1 1 100%;">
+                        <strong>História</strong>
+                        <p id="modalAnimalHistoria"></p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <strong>Contato para adoção</strong>
+                        <span id="modalAnimalContato"></span>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <strong>Localização</strong>
+                        <span id="modalAnimalLocal"></span>
+                    </div>
+                    
+                    <button class="adopt-btn" id="adoptButton">
+                        <i class="fas fa-heart"></i> Quero adotar!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <section id="quem-somos">
+            <h2>Quem Somos</h2>
+            <p>Nossa associação foi fundada em 2010 com o objetivo de proteger e cuidar dos animais em situação de vulnerabilidade. Somos um grupo de voluntários apaixonados por animais e comprometidos com o bem-estar deles.</p>
+            <p>Atuamos resgatando animais abandonados, providenciando cuidados veterinários, promovendo a adoção responsável e conscientizando a população sobre a importância do respeito e cuidado com os animais.</p>
+            <p>Contamos com o apoio essencial de profissionais veterinários dedicados que contribuem significativamente para nossa causa. Sem eles, não poderíamos realizar todo o trabalho que fazemos.</p>
+            <p>Nosso trabalho é totalmente voluntário e dependemos de doações para continuar nossa missão. Já ajudamos mais de 5,000 animais a encontrarem um lar amoroso e proporcionamos tratamento para milhares de outros.</p>
+            <p>Acreditamos que um mundo melhor é possível quando tratamos todos os seres vivos com compaixão e respeito.</p>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="contribua.html" class="btn" style="background-color: var(--success); color: white;">
+                    <i class="fas fa-hand-holding-heart"></i> Ajude Nossa Causa
+                </a>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <p>Associação Protetora dos Animais é uma organização sem fins lucrativos dedicada ao resgate e proteção de animais em situação de risco.</p>
+                <p>CNPJ: 59.641.170/0001-06</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (XX) XXXX-XXXX</p>
+                <p><i class="fas fa-envelope"></i> XXXXX@XXXXX.XXX.XX</p>
+                <p><i class="fas fa-map-marker-alt"></i> Rua 6 de Janeiro, 611 - Bandeirantes D'oeste/SP</p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Horário de Funcionamento</h3>
+                <p><strong>Segunda a Sexta:</strong> Xh às XXh</p>
+                <p><strong>Sábado:</strong> Xh às XXh</p>
+                <p><strong>Domingo:</strong> Fechado</p>
+                <p>Visitas ao abrigo apenas com agendamento.</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Associação Protetora dos Animais. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        // Menu Hamburguer
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const header = document.getElementById('mainHeader');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        
+        // Fechar menu ao clicar em um link
+        const navItems = document.querySelectorAll('.nav-link');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+        
+        // Efeito de scroll no header
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Animação do contador
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    clearInterval(timer);
+                    current = target;
+                }
+                element.textContent = Math.floor(current).toLocaleString();
+            }, 20);
+        }
+        
+        // Iniciar contadores quando a seção estiver visível
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(document.getElementById('animalsRescued'), 5247);
+                    animateCounter(document.getElementById('animalsAdopted'), 3892);
+                    animateCounter(document.getElementById('activeVolunteers'), 128);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(document.querySelector('.counter'));
+        
+        // Modal para informações dos veterinários
+        const vetModal = document.getElementById('veterinarioModal');
+        const closeVetModal = document.getElementById('closeVetModal');
+        const vetCards = document.querySelectorAll('.veterinario-card');
+        
+        vetCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const vetInfo = JSON.parse(card.getAttribute('data-info'));
+                
+                // Preencher modal com as informações
+                document.getElementById('modalVetImg').src = vetInfo.foto;
+                document.getElementById('modalVetNome').textContent = vetInfo.nome;
+                document.getElementById('modalVetEspecialidade').textContent = vetInfo.especialidade;
+                document.getElementById('modalVetContato').textContent = vetInfo.contato;
+                document.getElementById('modalVetClinica').textContent = vetInfo.clinica;
+                document.getElementById('modalVetContribuicao').textContent = vetInfo.contribuicao;
+                
+                // Exibir modal
+                vetModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        // Fechar modal veterinário
+        closeVetModal.addEventListener('click', () => {
+            vetModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Modal para informações dos animais
+        const animalModal = document.getElementById('animalModal');
+        const closeAnimalModal = document.getElementById('closeAnimalModal');
+        const animalCards = document.querySelectorAll('.animal-card');
+        const adoptButton = document.getElementById('adoptButton');
+        
+        animalCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const animalInfo = JSON.parse(card.getAttribute('data-info'));
+                
+                // Preencher modal com as informações
+                document.getElementById('modalAnimalImg').src = animalInfo.foto;
+                document.getElementById('modalAnimalNome').textContent = animalInfo.nome;
+                document.getElementById('modalAnimalTipo').textContent = animalInfo.tipo;
+                document.getElementById('modalAnimalRaca').textContent = animalInfo.raca;
+                document.getElementById('modalAnimalIdade').textContent = animalInfo.idade;
+                document.getElementById('modalAnimalSexo').textContent = animalInfo.sexo;
+                document.getElementById('modalAnimalPorte').textContent = animalInfo.porte;
+                document.getElementById('modalAnimalTemperamento').textContent = animalInfo.temperamento;
+                document.getElementById('modalAnimalSaude').textContent = animalInfo.saude;
+                document.getElementById('modalAnimalHistoria').textContent = animalInfo.historia;
+                document.getElementById('modalAnimalContato').textContent = animalInfo.contato;
+                document.getElementById('modalAnimalLocal').textContent = animalInfo.local;
+                
+                // Configurar botão de adoção
+                adoptButton.onclick = () => {
+                    alert(`Obrigado pelo interesse em adotar ${animalInfo.nome}! Entraremos em contato pelo ${animalInfo.contato.split('|')[0].trim()} para agendar uma visita.`);
+                };
+                
+                // Mostrar alerta se for urgente
+                const urgentAlert = document.getElementById('urgentAlert');
+                if (animalInfo.urgent) {
+                    urgentAlert.style.display = 'block';
+                    document.getElementById('urgentReason').textContent = animalInfo.reason;
+                } else {
+                    urgentAlert.style.display = 'none';
+                }
+                
+                // Exibir modal
+                animalModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        // Fechar modal animal
+        closeAnimalModal.addEventListener('click', () => {
+            animalModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Fechar modais ao clicar fora
+        window.addEventListener('click', (e) => {
+            if (e.target === vetModal) {
+                vetModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+            if (e.target === animalModal) {
+                animalModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Rolagem suave para a seção Quem Somos
+        document.querySelector('a[href="#quem-somos"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        
+        // Efeito de digitação no banner (opcional)
+        const bannerTitle = document.querySelector('.banner h1');
+        const originalText = bannerTitle.textContent;
+        bannerTitle.textContent = '';
+        
+        let i = 0;
+        const typingEffect = setInterval(() => {
+            if (i < originalText.length) {
+                bannerTitle.textContent += originalText.charAt(i);
+                i++;
+            } else {
+                clearInterval(typingEffect);
+            }
+        }, 100);
+    </script>
 </body>
 </html>
