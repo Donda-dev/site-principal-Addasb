@@ -26,8 +26,182 @@
                 <li><a href="contribua.html" class="nav-link">Contribua</a></li>
                 <li><a href="prestacao-contas.html" class="nav-link">Prestação de Contas</a></li>
                 <li><a href="contato.html" class="nav-link">Contato</a></li>
+                <li><a href="denuncia.html" class="nav-link">Denuncia Anônima</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="banner">
+            <h1>Dê um lar cheio de amor</h1>
+            <p>Nossos animais resgatados estão esperando por uma segunda chance. Seja parte dessa transformação e adote um amigo para vida toda.</p>
+            <a href="#adocao" class="btn">Quero Adotar</a>
+        </section>
+
+        <section class="counter">
+            <div class="counter-item">
+                <div class="counter-number" id="animalsRescued">5000</div>
+                <div class="counter-label">Animais Resgatados</div>
+            </div>
+            <div class="counter-item">
+                <div class="counter-number" id="animalsAdopted">3000</div>
+                <div class="counter-label">Animais Adotados</div>
+            </div>
+            <div class="counter-item">
+                <div class="counter-number" id="activeVolunteers">100</div>
+                <div class="counter-label">Voluntários Ativos</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Nossos Heróis Veterinários</h2>
+            <div class="cards-container">
+
+                <div class="veterinario-card" data-info='{
+                    "nome": "Dra. Ana Paula Silva",
+                    "especialidade": "Clínica Geral e Cirurgia",
+                    "contato": "(11) 98765-4321",
+                    "clinica": "PetCare - Av. dos Animais, 1000",
+                    "contribuicao": "Mais de 500 atendimentos gratuitos em 2023, doação mensal de medicamentos e participação em campanhas de castração. Dra. Ana é nossa voluntária mais antiga, dedicando-se à causa animal há 8 anos.",
+                    "foto": "./img/exemplo1.jpg"
+                }'>
+                    <img src="./img/exemplo1.jpg" alt="Dra. Ana Paula Silva" class="veterinario-img">
+                    <div class="veterinario-info">
+                        <div class="veterinario-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>Dra. Ana Paula Silva</h3>
+                        <p>Clínica Geral e Cirurgia</p>
+                    </div>
+                </div>
+                
+                <div class="veterinario-card" data-info='{
+                    "nome": "Dr. Carlos Mendonça",
+                    "especialidade": "Ortopedia Veterinária",
+                    "contato": "(11) 91234-5678",
+                    "clinica": "Animal Center - Rua dos Bichos, 500",
+                    "contribuicao": "Responsável por todas as cirurgias ortopédicas complexas sem custo para a associação em 2023, além de ministrar cursos para nossos voluntários. Dr. Carlos já realizou mais de 200 procedimentos ortopédicos em nossos resgatados.",
+                    "foto": "./img/exemplo2.jpg"
+                }'>
+                    <img src="./img/exemplo2.jpg" alt="Dr. Carlos Mendonça" class="veterinario-img">
+                    <div class="veterinario-info">
+                        <div class="veterinario-icon">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                        <h3>Dr. Carlos Mendonça</h3>
+                        <p>Ortopedia Veterinária</p>
+                    </div>
+                </div>
+                
+                <div class="veterinario-card" data-info='{
+                    "nome": "Dra. Mariana Oliveira",
+                    "especialidade": "Dermatologia Veterinária",
+                    "contato": "(11) 99876-5432",
+                    "clinica": "SkinPet - Alameda dos Pets, 300",
+                    "contribuicao": "Desenvolveu protocolos de tratamento para doenças de pele em animais de rua e doa mensalmente produtos dermatológicos. Dra. Mariana já tratou mais de 150 casos de dermatite em nossos animais com sucesso.",
+                    "foto": "./img/exemplo3.jpg"
+                }'>
+                    <img src="./img/exemplo3.jpg" alt="Dra. Mariana Oliveira" class="veterinario-img">
+                    <div class="veterinario-info">
+                        <div class="veterinario-icon">
+                            <i class="fas fa-allergies"></i>
+                        </div>
+                        <h3>Dra. Mariana Oliveira</h3>
+                        <p>Dermatologia Veterinária</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="adocao">
+            <h2 class="section-title">Encontre seu Melhor Amigo</h2>
+            <div class="cards-container">
+                <div class="animal-card urgent" data-info='{
+                    "nome": "thor",
+                    "tipo": "cachorro",
+                    "raca": "SRD (Vira-Lata)",
+                    "idade": "2 anos",
+                    "sexo": "macho",
+                    "porte": "médio",
+                    "temperamento": "brincalhão e carinhoso e muito leal. Adora crianças e se dá bem com outros animais.",
+                    "saude": "Vacinado, vermifugado, castrado e microchipado. Saudável, sem problemas conhecidos.",
+                    "historia": "Thor foi resgatado das ruas com uma pata fraturada após ser atropelado. Após o tratamento intensivo com nosso time de veterinários, está totalmente recuperado e pronto para e encontrar um lar amoroso. Ele é extremamente grato e demostra muito amor por quem cuida dele.",
+                    "contato": "(xx) xxxx-xxxx | XXXXX@XXXXX.XXX",
+                    "local": "Canil da Associação - Sud Mennucci",
+                    "foto": "./img/thor.jpg"
+                    "urgente": true,
+                    "reason": "Thor está em um lar temporário, mas precisa de um lar definitivo com urgência."
+                }'>
+                <div class="animal-img-container">
+                    <img src="https://source.unsplash.com/random/600x600/?dog,labrador" alt="Thor" class="animal-img">
+                </div>
+                <div class="animal-info">
+                    <h3>Thor</h3>
+                    <p>Cachorro • 2 anos • Macho</p>
+                    <div class="animal-tags">
+                        <span class="animal-tag">Vacinado</span>
+                        <span class="animal-tag">Castrado</span>
+                        <span class="animal-tag">Brincalhão</span>
+                    </div>
+                </div>
+            </div>
+            <div class="animal-card" data-info='{
+                "nome": "Luna",
+                "tipo": "Gato",
+                "raca": "Siamês",
+                "idade": "1 ano",
+                "sexo": "Fêmea",
+                "porte": "Pequeno",
+                "temperamento": "Calma, afetuosa e um pouco tímida no início. Depois que cria confiança, adora ficar no colo.",
+                "saude": "Vacinada, vermifugada, castrada e microchipada. Saudável, sem problemas conhecidos.",
+                "historia": "Luna foi abandonada em uma caixa na frente da nossa sede quando era filhote. É uma gatinha muito tranquila que adora carinho e brincar com arranhadores. Ideal para apartamento.",
+                "contato": "(11) 90000-2222 | adocao@protetora.org.br",
+                "local": "Gatil da Associação - Zona Sul de São Paulo",
+                "foto": "./img/luna.jpg",
+                "urgent": false
+            }'>
+                <div class="animal-img-container">
+                    <img src="./img/luna.jpg" alt="Luna" class="animal-img">
+                </div>
+                <div class="animal-info">
+                    <h3>Luna</h3>
+                    <p>Gato • 1 ano • Fêmea</p>
+                    <div class="animal-tags">
+                        <span class="animal-tag">Vacinada</span>
+                        <span class="animal-tag">Castrada</span>
+                        <span class="animal-tag">Calma</span>
+                    </div>
+                </div>
+            </div>
+            <div class="animal-card" data-info='{
+                "nome": "Pipoca",
+                "tipo": "Coelho",
+                "raca": "Mini Lop",
+                "idade": "8 meses",
+                "sexo": "Fêmea",
+                "porte": "Pequeno",
+                "temperamento": "Curiosa, tranquila e muito carinhosa. Adora ser acariciada e receber petiscos.",
+                "saude": "Vacinada e vermifugada. Castração agendada para o próximo mês (custo coberto pela associação).",
+                "historia": "Pipoca foi encontrada abandonada em um parque. Está acostumada com humanos e seria ótima para uma família com crianças. Já está treinada para usar caixinha de areia.",
+                "contato": "(11) 90000-3333 | adocao@protetora.org.br",
+                "local": "Lar Temporário - Centro de São Paulo",
+                "foto": "./img/pipoca.jpg",
+                "urgent": false
+            }'>
+                <div class="animal-img-container">
+                    <img src="./img/pipoca.jpg" alt="Pipoca" class="animal-img">
+                </div>
+                <div class="animal-info">
+                    <h3>Pipoca</h3>
+                    <p>Coelho • 8 meses • Fêmea</p>
+                    <div class="animal-tags">
+                        <span class="animal-tag">Vacinada</span>
+                        <span class="animal-tag">Vermifugada</span>
+                        <span class="animal-tag">Curiosa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
 </body>
 </html>
