@@ -537,8 +537,13 @@
         // Rolagem suave para a seção Quem Somos
         document.querySelector('a[href="#quem-somos"]').addEventListener('click', function(e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+            const target = document.querySelector(this.getAttribute('href'));
+            const headerHeight = document.getElementById('mainHeader').offsetHeight;
+            const targetPosition = target.offsetTop - headerHeight;
+    
+        window.scrollTo({
+             top: targetPosition,
+            behavior: 'smooth'
             });
         });
         
