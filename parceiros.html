@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parceiros | Associação Protetora dos Animais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                <span>Associação Protetora dos Animais</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        
+        <nav class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="index.html" class="nav-link">Página Inicial</a></li>
+                <li><a href="quem-somos.html" class="nav-link">Quem Somos</a></li>
+                <li><a href="primeiros-socorros.html" class="nav-link">Primeiros Socorros</a></li>
+                <li><a href="parceiros.html" class="nav-link active">Parceiros</a></li>
+                <li><a href="contribua.html" class="nav-link">Contribua</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+                <li><a href="denuncia.html" class="nav-link">Denúncia Anônima</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+   
+    <main>
+       
+        <section class="banner">
+            <h1>Nossos Parceiros</h1>
+            <p>Conheça os profissionais e estabelecimentos que nos ajudam a cuidar dos animais</p>
+        </section>
+        
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="veterinario">Veterinários</button>
+            <button class="filter-btn" data-filter="clinica">Clínicas</button>
+            <button class="filter-btn" data-filter="pet-shop">Pet Shops</button>
+            <button class="filter-btn" data-filter="racao">Lojas de Ração</button>
+            <button class="filter-btn" data-filter="hotel">Hotéis</button>
+        </div>
+        
+        <section>
+            <h2 class="section-title">Veterinários Parceiros</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Profissionais que oferecem descontos para animais resgatados pela associação</p>
+            
+            <div class="partners-container">
+            
+                <div class="partner-card" data-category="veterinario">
+                    <img src="https://source.unsplash.com/random/600x400/?veterinarian,woman" alt="Dra. Ana Paula Silva" class="partner-img">
+                    <div class="partner-info">
+                        <span class="partner-type">Veterinário</span>
+                        <h3 class="partner-name">Dra. Ana Paula Silva</h3>
+                        <p class="partner-specialty">Clínica Geral e Cirurgia</p>
+                        
+                        <div class="partner-contact">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(11) 9876-5432</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. dos Animais, 1000 - São Paulo/SP</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-clock"></i>
+                            <span>Seg-Sex: 8h-19h | Sáb: 8h-14h</span>
+                        </div>
+                        
+                        <div class="partner-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>30% de desconto para resgatados</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Atendimento emergencial 24h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+           
+                <div class="partner-card" data-category="veterinario">
+                    <img src="https://source.unsplash.com/random/600x400/?veterinarian,man" alt="Dr. Carlos Mendonça" class="partner-img">
+                    <div class="partner-info">
+                        <span class="partner-type">Veterinário</span>
+                        <h3 class="partner-name">Dr. Carlos Mendonça</h3>
+                        <p class="partner-specialty">Ortopedia Veterinária</p>
+                        
+                        <div class="partner-contact">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(11) 9123-4567</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rua dos Bichos, 500 - São Paulo/SP</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-clock"></i>
+                            <span>Seg-Sex: 9h-18h | Sáb: 9h-13h</span>
+                        </div>
+                        
+                        <div class="partner-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>40% de desconto em cirurgias</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Raio-X gratuito para resgatados</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <div class="partner-card" data-category="clinica">
+                    <img src="https://source.unsplash.com/random/600x400/?veterinary,clinic" alt="PetCare Centro Veterinário" class="partner-img">
+                    <div class="partner-info">
+                        <span class="partner-type">Clínica Veterinária</span>
+                        <h3 class="partner-name">PetCare Centro Veterinário</h3>
+                        <p class="partner-specialty">Especialidades diversas</p>
+                        
+                        <div class="partner-contact">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(11) 2345-6789</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Alameda dos Pets, 300 - São Paulo/SP</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-clock"></i>
+                            <span>24 horas</span>
+                        </div>
+                        
+                        <div class="partner-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>20% de desconto em consultas</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Internação gratuita para resgatados</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Banho terapêutico gratuito</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       
+        <section>
+            <h2 class="section-title">Lojas de Ração e Pet Shops</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Estabelecimentos que oferecem condições especiais para nossos associados</p>
+            
+            <div class="partners-container">
+               
+                <div class="partner-card" data-category="pet-shop racao">
+                    <img src="https://source.unsplash.com/random/600x400/?pet,shop" alt="Mundo Animal Pet Shop" class="partner-img">
+                    <div class="partner-info">
+                        <span class="partner-type">Pet Shop & Ração</span>
+                        <h3 class="partner-name">Mundo Animal Pet Shop</h3>
+                        <p class="partner-specialty">Produtos e serviços para pets</p>
+                        
+                        <div class="partner-contact">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(11) 3456-7890</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rua dos Cães, 123 - São Paulo/SP</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-clock"></i>
+                            <span>Seg-Sáb: 8h-20h | Dom: 9h-14h</span>
+                        </div>
+                        
+                        <div class="partner-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>15% de desconto em ração</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Banho gratuito mensal para resgatados</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+              
+                <div class="partner-card" data-category="racao">
+                    <img src="https://source.unsplash.com/random/600x400/?dog,food" alt="Rações Premium" class="partner-img">
+                    <div class="partner-info">
+                        <span class="partner-type">Loja de Ração</span>
+                        <h3 class="partner-name">Rações Premium</h3>
+                        <p class="partner-specialty">Alimentos de alta qualidade</p>
+                        
+                        <div class="partner-contact">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(11) 4567-8901</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. dos Gatos, 456 - São Paulo/SP</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-clock"></i>
+                            <span>Seg-Sáb: 7h-19h</span>
+                        </div>
+                        
+                        <div class="partner-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>20% de desconto em todas as rações</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Doação mensal de ração para o abrigo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+             
+                <div class="partner-card" data-category="pet-shop">
+                    <img src="https://source.unsplash.com/random/600x400/?pet,grooming" alt="Pet Beauty" class="partner-img">
+                    <div class="partner-info">
+                        <span class="partner-type">Pet Shop</span>
+                        <h3 class="partner-name">Pet Beauty</h3>
+                        <p class="partner-specialty">Estética e bem-estar animal</p>
+                        
+                        <div class="partner-contact">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(11) 5678-9012</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Praça dos Animais, 789 - São Paulo/SP</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-clock"></i>
+                            <span>Ter-Dom: 9h-18h</span>
+                        </div>
+                        
+                        <div class="partner-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Banho e tosa gratuitos para adoção</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>10% de desconto em produtos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      
+        <section>
+            <h2 class="section-title">Hotéis para Pets</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Locais seguros para hospedar seu pet quando você viajar</p>
+            
+            <div class="partners-container">
+                
+                <div class="partner-card" data-category="hotel">
+                    <img src="https://source.unsplash.com/random/600x400/?pet,hotel" alt="Hotel Canino Feliz" class="partner-img">
+                    <div class="partner-info">
+                        <span class="partner-type">Hotel para Cães</span>
+                        <h3 class="partner-name">Hotel Canino Feliz</h3>
+                        <p class="partner-specialty">Hospedagem premium</p>
+                        
+                        <div class="partner-contact">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(11) 6789-0123</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Estrada dos Animais, Km 5 - São Paulo/SP</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-clock"></i>
+                            <span>24 horas</span>
+                        </div>
+                        
+                        <div class="partner-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>50% de desconto para resgatados</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Área de lazer com monitoramento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+           
+                <div class="partner-card" data-category="hotel">
+                    <img src="https://source.unsplash.com/random/600x400/?cat,hotel" alt="Gatíssimo Hotel" class="partner-img">
+                    <div class="partner-info">
+                        <span class="partner-type">Hotel para Gatos</span>
+                        <h3 class="partner-name">Gatíssimo Hotel</h3>
+                        <p class="partner-specialty">Hospedagem felina especializada</p>
+                        
+                        <div class="partner-contact">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(11) 7890-1234</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rua dos Felinos, 101 - São Paulo/SP</span>
+                        </div>
+                        <div class="partner-contact">
+                            <i class="fas fa-clock"></i>
+                            <span>24 horas</span>
+                        </div>
+                        
+                        <div class="partner-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>1 diária gratuita por mês para resgatados</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Ambiente enriquecido para gatos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       
+        <section class="map-section">
+            <h2 class="section-title">Onde Encontrar Nossos Parceiros</h2>
+            <p style="text-align: center; margin-bottom: 1rem;">Veja no mapa as localizações de nossos principais parceiros</p>
+            
+            <div class="map-container">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197584455561!2d-46.65867598440793!3d-23.561346267357274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        
+      
+        <section class="register-partner">
+            <h2>Seja um Parceiro da Nossa Causa</h2>
+            <p>Se você é veterinário, tem um pet shop, loja de ração ou qualquer negócio relacionado a animais, junte-se a nós e faça parte dessa rede de apoio aos animais necessitados.</p>
+            <a href="contato.html" class="btn" style="background-color: white; color: var(--primary);">
+                <i class="fas fa-handshake"></i> Quero ser Parceiro
+            </a>
+        </section>
+    </main>
+    
+   
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <p>Associação Protetora dos Animais é uma organização sem fins lucrativos dedicada ao resgate e proteção de animais em situação de risco.</p>
+                <p>CNPJ: 12.345.678/0001-90</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                <p><i class="fas fa-envelope"></i> contato@protetora.org.br</p>
+                <p><i class="fas fa-map-marker-alt"></i> Rua dos Animais, 123 - São Paulo/SP</p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Horário de Funcionamento</h3>
+                <p><strong>Segunda a Sexta:</strong> 9h às 18h</p>
+                <p><strong>Sábado:</strong> 9h às 14h</p>
+                <p><strong>Domingo:</strong> Fechado</p>
+                <p>Visitas ao abrigo apenas com agendamento.</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Associação Protetora dos Animais. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
+     
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const header = document.getElementById('mainHeader');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        
+      
+        const navItems = document.querySelectorAll('.nav-link');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+        
+       
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+   
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const partnerCards = document.querySelectorAll('.partner-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+                
+                partnerCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category').includes(filterValue)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Rolagem suave para as seções
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Efeito de digitação no banner (opcional)
+        const bannerTitle = document.querySelector('.banner h1');
+        const originalText = bannerTitle.textContent;
+        bannerTitle.textContent = '';
+        
+        let i = 0;
+        const typingEffect = setInterval(() => {
+            if (i < originalText.length) {
+                bannerTitle.textContent += originalText.charAt(i);
+                i++;
+            } else {
+                clearInterval(typingEffect);
+            }
+        }, 100);
+    </script>
+</body>
+</html>
