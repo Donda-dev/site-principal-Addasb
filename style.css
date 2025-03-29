@@ -1035,6 +1035,89 @@ footer {
     margin-bottom: 15px;
 }
 
+.contribution-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 4rem;
+}
+
+.contribution-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.contribution-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.contribution-header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contribution-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.contribution-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contribution-content {
+    padding: 20px;
+}
+
+.contribution-content p {
+    margin-bottom: 15px;
+}
+
+.contribution-list {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.contribution-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.contribution-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: var(--success);
+    position: absolute;
+    left: 0;
+}
+
+.contribution-btn {
+    display: block;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.contribution-btn:hover {
+    background: linear-gradient(135deg, #ff5252, #3dc4be);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
 /* Seção de Voluntariado */
 .volunteer-section {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
