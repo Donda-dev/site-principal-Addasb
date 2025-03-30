@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia Anônima - Associação Protetora dos Animais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com menu hamburguer -->
+    <header id="mainHeader">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                <span>Associação Protetora dos Animais</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        
+        <nav class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="index.html" class="nav-link">Página Inicial</a></li>
+                <li><a href="index.html#quem-somos" class="nav-link">Quem Somos</a></li>
+                <li><a href="primeiros-socorros.html" class="nav-link">Primeiros Socorros</a></li>
+                <li><a href="parceiros.html" class="nav-link">Parceiros</a></li>
+                <li><a href="contribua.html" class="nav-link">Contribua</a></li>
+                <li><a href="prestacao_de_contas.html" class="nav-link">Prestação de Contas</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+                <li><a href="denuncia.html" class="nav-link">Denúncia Anônima</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+ 
+        <section class="form-banner">
+            <h1>Denúncia de Maus-Tratos a Animais</h1>
+            <p>Sua denúncia pode salvar uma vida. Ajude-nos a proteger os animais que não podem se defender.</p>
+        </section>
+        
+    
+        <form action="#" method="POST" class="denuncia-form">
+            <section>
+                <h2>1. Informações do Animal</h2>
+                <label for="especie">Espécie do Animal:</label>
+                <input type="text" id="especie" name="especie" required placeholder="Ex: Cachorro, Gato, Cavalo, etc.">
+                
+                <label for="quantidade">Quantidade de Animais Envolvidos:</label>
+                <input type="text" id="quantidade" name="quantidade" placeholder="Quantos animais estão sofrendo maus-tratos?">
+                
+                <label for="nome">Nome do Animal (se conhecido):</label>
+                <input type="text" name="nome" id="nome" placeholder="Opcional">
+                
+                <label for="cor">Cor/Descrição Física:</label>
+                <input type="text" name="cor" id="cor" placeholder="Descreva a aparência do animal">
+                
+                <label for="descricao-animal">Descrição Detalhada do Animal:</label>
+                <textarea id="descricao-animal" name="descricao-animal" rows="4" required placeholder="Descreva o animal com o máximo de detalhes possível (tamanho, cor, marcas distintivas, etc.)"></textarea> 
+            </section>
+            
+            <section>
+                <h2>2. Detalhes do Caso</h2>
+                <label>Tipo de Maus-Tratos Observados:</label>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="abandono" name="tipo" value="Abandono">
+                    <label for="abandono">Abandono</label>
+                </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="negligencia" name="tipo" value="Negligência">
+                    <label for="negligencia">Negligência (falta de cuidados básicos)</label>
+                </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="violencia" name="tipo" value="Violência Física">
+                    <label for="violencia">Violência Física (agressões, espancamento)</label>
+                </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="confinamento" name="tipo" value="Confinamento Inadequado">
+                    <label for="confinamento">Confinamento Inadequado</label>
+                </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="alimentacao" name="tipo" value="Alimentação Inadequada">
+                    <label for="alimentacao">Alimentação Inadequada</label>
+                </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="exploracao" name="tipo" value="Exploração">
+                    <label for="exploracao">Exploração (trabalho forçado, rinhas)</label>
+                </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="envenenamento" name="tipo" value="Envenenamento">
+                    <label for="envenenamento">Envenenamento</label>
+                </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="outros" name="tipo" value="Outros">
+                    <label for="outros">Outros (especifique abaixo)</label>
+                </div>
+                
+                <label for="descricao-caso">Descrição Detalhada dos Maus-Tratos:</label>
+                <textarea id="descricao-caso" name="descricao-caso" rows="6" required placeholder="Descreva com detalhes o que você observou, incluindo data, horário e frequência dos maus-tratos"></textarea>
+                
+                <label for="tempo">Há quanto tempo isso ocorre?</label>
+                <input type="text" id="tempo" name="tempo" placeholder="Ex: 1 semana, 2 meses, etc.">
+            </section>
+            
+            <section>
+                <h2>3. Localização e Responsável</h2>
+                <label for="endereco">Endereço Completo ou Ponto de Referência:</label>
+                <input type="text" id="endereco" name="endereco" required placeholder="Rua, número, bairro, cidade">
+                
+                <label for="responsavel">Nome do Responsável (se conhecido):</label>
+                <input type="text" id="responsavel" name="responsavel" placeholder="Opcional">
+                
+                <label for="info-resp">Informações Adicionais sobre o Responsável:</label>
+                <textarea id="info-resp" name="info-resp" rows="4" placeholder="Descreva o responsável, se possível (aparência, veículo, horários, etc.)"></textarea>
+            </section>
+            
+            <section>
+                <h2>4. Comprovação do Caso</h2>
+                <label for="comprovacao">Anexar Fotos ou Vídeos (opcional mas importante):</label>
+                <input type="file" id="comprovacao" name="comprovacao" accept="image/*, video/*" multiple>
+                <p style="font-size: 0.9rem; color: #666; margin-top: -15px; margin-bottom: 20px;">As imagens/vídeos ajudam muito na apuração do caso. Se possível, anexe materiais que comprovem a situação.</p>
+            </section>
+            
+            <section>
+                <h2>5. Dados do Denunciante</h2>
+                <p style="margin-bottom: 15px;">Sua denúncia pode ser feita de forma anônima. Se desejar se identificar, clique no botão abaixo.</p>
+                
+                <button type="button" id="toggle-anonimo" class="btn-anonimo">
+                    <i class="fas fa-user-secret"></i> Quero me identificar
+                </button>
+                
+                <div id="denunciante-info">
+                    <label for="nome-denunciante">Nome Completo:</label>
+                    <input type="text" id="nome-denunciante" name="nome-denunciante" placeholder="Opcional">
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Opcional">
+                    
+                    <label for="telefone">Telefone (opcional):</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Opcional">
+                    
+                    <p style="font-size: 0.9rem; color: #666; margin-top: -10px; margin-bottom: 15px;">Seus dados serão mantidos em sigilo e usados apenas para contato sobre esta denúncia.</p>
+                </div>
+            </section>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane"></i> Enviar Denúncia
+                </button>
+            </div>
+        </form>
+    </main>
+    
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <p>Associação Protetora dos Animais é uma organização sem fins lucrativos dedicada ao resgate e proteção de animais em situação de risco.</p>
+                <p>CNPJ: 59.641.170/0001-06</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (XX) XXXX-XXXX</p>
+                <p><i class="fas fa-envelope"></i> XXXXX@XXXXX.XXX.XX</p>
+                <p><i class="fas fa-map-marker-alt"></i> Rua 6 de Janeiro, 611 - Bandeirantes D'oeste/SP</p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://w.app/addasb"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column" id="contato">
+                <h3>Horário de Funcionamento</h3>
+                <p><strong>Segunda a Sexta:</strong> Xh às XXh</p>
+                <p><strong>Sábado:</strong> Xh às XXh</p>
+                <p><strong>Domingo:</strong> Fechado</p>
+                <p>Visitas ao abrigo apenas com agendamento.</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Associação Protetora dos Animais. Todos os direitos reservados.
+              <a href="https://github.com/Donda-dev" target="_blank" class="dev-credit" aria-label="Desenvolvedor do site">Donda-dev</a>
+            </p>
+        </div>
+    </footer>
+    
+    <script>
+        // Menu Hamburguer
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const header = document.getElementById('mainHeader');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        
+        // Fechar menu ao clicar em um link
+        const navItems = document.querySelectorAll('.nav-link');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+        
+        // Efeito de scroll no header
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Toggle informações do denunciante
+        document.addEventListener("DOMContentLoaded", function() {
+            const botaoAnonimo = document.getElementById("toggle-anonimo");
+            const infoDenunciante = document.getElementById("denunciante-info");
+            
+            // Verificar se há um hash na URL para mostrar o formulário
+            if (window.location.hash === '#identificar') {
+                infoDenunciante.classList.add('visible');
+                botaoAnonimo.innerHTML = '<i class="fas fa-eye-slash"></i> Ocultar meus dados';
+            }
+            
+            botaoAnonimo.addEventListener("click", function() {
+                if (infoDenunciante.classList.contains("visible")) {
+                    infoDenunciante.classList.remove("visible");
+                    botaoAnonimo.innerHTML = '<i class="fas fa-user-secret"></i> Quero me identificar';
+                } else {
+                    infoDenunciante.classList.add("visible");
+                    botaoAnonimo.innerHTML = '<i class="fas fa-eye-slash"></i> Ocultar meus dados';
+                }
+            });
+        });
+        
+        // Validação do formulário
+        const form = document.querySelector('.denuncia-form');
+        form.addEventListener('submit', function(e) {
+            const especie = document.getElementById('especie');
+            const descricaoAnimal = document.getElementById('descricao-animal');
+            const descricaoCaso = document.getElementById('descricao-caso');
+            const endereco = document.getElementById('endereco');
+            
+            if (!especie.value.trim()) {
+                alert('Por favor, informe a espécie do animal.');
+                especie.focus();
+                e.preventDefault();
+                return;
+            }
+            
+            if (!descricaoAnimal.value.trim()) {
+                alert('Por favor, descreva o animal.');
+                descricaoAnimal.focus();
+                e.preventDefault();
+                return;
+            }
+            
+            if (!descricaoCaso.value.trim()) {
+                alert('Por favor, descreva os maus-tratos observados.');
+                descricaoCaso.focus();
+                e.preventDefault();
+                return;
+            }
+            
+            if (!endereco.value.trim()) {
+                alert('Por favor, informe o local onde ocorrem os maus-tratos.');
+                endereco.focus();
+                e.preventDefault();
+                return;
+            }
+            
+            // Se tudo estiver ok, mostrar mensagem de sucesso
+            alert('Denúncia enviada com sucesso! Obrigado por ajudar a proteger os animais.');
+        });
+    </script>
+</body>
+</html>
