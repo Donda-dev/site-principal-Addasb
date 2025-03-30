@@ -1289,3 +1289,16 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
+.dev-credit {
+    color: transparent;
+    font-size: 0;
+    transition: all 0.3s;
+
+}
+
+.copyright:hover .dev-credit{
+    color: #666;
+    font-size: 0.7rem;
+}
+
