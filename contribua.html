@@ -27,7 +27,7 @@
                     <li><a href="primeiros-socorros.html" class="nav-link">Primeiros Socorros</a></li>
                     <li><a href="parceiros.html" class="nav-link">Parceiros</a></li>
                     <li><a href="contribua.html" class="nav-link active">Contribua</a></li>
-                    <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
                     <li><a href="denuncia.html" class="nav-link">Denúncia Anônima</a></li>
                 </ul>
             </nav>
@@ -272,7 +272,7 @@
                     <p>CNPJ: 59.641.170/0001-06</p>
                 </div>
                 
-                <div class="footer-column">
+                <div class="footer-column" id="contato">
                     <h3>Contato</h3>
                     <p><i class="fas fa-phone"></i> (XX) XXXX-XXXX</p>
                     <p><i class="fas fa-envelope"></i> XXXXX@XXXXX.XXX.XX</p>
@@ -347,6 +347,17 @@
                     });
                 });
             });
+            document.querySelector('a[href="#contato"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            const headerHeight = document.getElementById('mainHeader').offsetHeight;
+            const targetPosition = target.offsetTop - headerHeight;
+    
+        window.scrollTo({
+             top: targetPosition,
+            behavior: 'smooth'
+         });
+        });
             
             // Efeito de digitação no banner (opcional)
             const bannerTitle = document.querySelector('.banner h1');
