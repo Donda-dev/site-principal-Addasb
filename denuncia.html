@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,12 +9,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho com menu hamburguer -->
+     Cabeçalho com menu hamburguer 
     <header id="mainHeader">
         <div class="header-container">
             <div class="logo">
                 <i class="fas fa-paw"></i>
-                <span>Associação Protetora dos Animais</span>
+                <span>Associação dos Defensores dos Direitos dos Animais de Sud e Band</span>
             </div>
             <div class="hamburger" id="hamburger">
                 <div></div>
@@ -181,7 +182,7 @@
                 
                 <div class="social-links">
                     <a href="https://www.facebook.com/profile.php?id=61575909805957"><i class="fab fa-facebook-f"></i></a>
-                    <!--<a href="#"><i class="fab fa-instagram"></i></a>-->
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="https://w.app/addasb" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
@@ -293,5 +294,131 @@
             alert('Denúncia enviada com sucesso! Obrigado por ajudar a proteger os animais.');
         });
     </script>
+</body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Denuncia</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styles_produção.css">
+  
+</head>
+<body>
+        <header id="mainHeader">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-paw"></i>
+                <span>Associação dos Defensores dos Direitos dos Animais de Sud e Band</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        
+        <nav class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="index.html" class="nav-link">Página Inicial</a></li>
+                <li><a href="index.html#quem-somos" class="nav-link">Quem Somos</a></li>
+                <li><a href="primeiros_socorros.html" class="nav-link">Primeiros Socorros</a></li>
+                <li><a href="parceiros.html" class="nav-link">Parceiros</a></li>
+                <li><a href="contribua.html" class="nav-link">Contribua</a></li>
+                <li><a href="prestacao_de_contas.html" class="nav-link active">Prestação de Contas</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+                <li><a href="denuncia.html" class="nav-link">Denúncia Anônima</a></li>
+            </ul>
+        </nav>
+    </header>
+  <main>
+  <div class="container">
+    <div class="text">Em Produção</div>
+    <img src="./img/engrenagem2.webp" alt="Engrenagem" class="gear">
+  </div>
+</main>
+
+<footer>
+
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre Nós</h3>
+                <p>Associação Protetora dos Animais é uma organização sem fins lucrativos dedicada ao resgate e proteção de animais em situação de risco.</p>
+                <p>CNPJ: 59.641.170/0001-06</p>
+            </div>
+            
+            <div class="footer-column" id="contato">
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (18) 99663-5117</p>
+                <p><i class="fas fa-envelope"></i> vanianantes974@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Rua 6 de Janeiro, 611 - Bandeirantes D'oeste/SP</p>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61575909805957"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://w.app/addasb" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Horário de Funcionamento</h3>
+                <p><strong>Segunda a Sexta:</strong> 8h às 18h</p>
+                <p><strong>Sábado:</strong> 8h às 12h</p>
+                <p><strong>Domingo:</strong> Fechado</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Associação Protetora dos Animais. Todos os direitos reservados.
+              <a href="https://github.com/Donda-dev" target="_blank" class="dev-credit" aria-label="Desenvolvedor do site">Donda-dev</a>
+            </p>
+    </footer>
+  <script>
+    // Menu Hamburguer
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const header = document.getElementById('mainHeader');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        
+        // Fechar menu ao clicar em um link
+        const navItems = document.querySelectorAll('.nav-link');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+        
+        // Efeito de scroll no header
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Rolagem suave para as seções
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+  </script>
 </body>
 </html>
